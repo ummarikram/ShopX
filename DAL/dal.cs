@@ -10,7 +10,7 @@ namespace ShopX.DAL
 {
     public class dal
     {
-        private static readonly string connString = "Server=tcp:shopx.database.windows.net,1433;Initial Catalog=ShopX;Persist Security Info=False;User ID=ShopXAdmin;Password=Fast2019;";
+        private static readonly string connString = "";
  
         public int SearchUser(String Email, String pass)
         {
