@@ -10,7 +10,7 @@ namespace ShopX.DAL
 {
     public class dal
     {
-        private static readonly string connString = "";
+        private static readonly string connString = ""; // Add your connection string here
  
         public int SearchUser(String Email, String pass)
         {
