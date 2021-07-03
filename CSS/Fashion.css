@@ -1,0 +1,127 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.FashionHeader {
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: 10%;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #fff;
+    cursor: default;
+}
+
+.checked {
+    color: orange;
+}
+
+
+.Star {
+    background-image: url(WebImages/Star.gif);
+    height: 17px;
+    width: 17px;
+}
+
+.WaitingStar {
+    background-image: url(WebImages/WaitingStar.gif);
+    height: 17px;
+    width: 17px;
+}
+
+.FilledStar {
+    background-image: url(WebImages/FilledStar.gif);
+    height: 17px;
+    width: 17px;
+}
+
+
+.dropdown-content a.Active {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 50px;
+}
+
+
+/* Float */
+.hvr-float {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+    .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+        .hvr-float:hover .overlay {
+            opacity: 1;
+        }
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+@media screen and (max-width:921px) {
+
+    .FashionHeader {
+        font-size: 45px;
+    }
+
+    .column {
+        width: 90%;
+    }
+
+    .overlay{
+        font-size:15px;
+    }
+}

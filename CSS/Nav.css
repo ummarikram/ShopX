@@ -1,0 +1,154 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 520px;
+    width: auto !important;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/WebImages/Background.jpg);
+    background-size: cover;
+}
+
+
+.main ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-family: 'Century Gothic';
+}
+
+    .main ul li {
+        display: inline-block;
+    }
+
+
+        .main ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+            .main ul li a:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+        .main ul li.Active a {
+            background-color: #fff;
+            color: #000;
+        }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height: 20px;
+}
+
+    .dropdown-content a {
+        color: #fff;
+        padding: 20px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.Categories:hover .dropdown-content {
+    display: block;
+}
+
+.Logo img {
+    float: left;
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+    .Logo img:hover, .Logo img:focus, .Logo img:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.SearchStyle {
+    float: left;
+    position: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    outline: none;
+    font-size: 16px;
+    border: 0px solid #fff;
+    border-bottom-width: 1px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.list-group {
+    background-color: white;
+    display: block;
+    list-style-type: none;
+    margin: 50px 0 0 170px;
+    padding: 0;
+    position: absolute;
+    width: 200px;
+}
+
+.SearchIcon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:921px) {
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        color: #000;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 120px;
+        top: 70px;
+        line-height: 20px;
+    }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 20px 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+    .main ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 30px;
+        margin-right: 20px;
+        width: 100px;
+        height: auto;
+        line-height: 45px;
+        display: block;
+        overflow: hidden;
+    }
+}

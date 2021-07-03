@@ -1,0 +1,302 @@
+﻿.Chatcontainer {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.Chatcontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.Chatcontainer img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+    .Chatcontainer img.right {
+        float: right;
+
+    }
+
+.time-right {
+    float: right;
+
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.ProductHeader {
+    font-family: "Century Gothic";
+    margin-top: 5%;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.column {
+    float: left;
+    width: 70%;
+    padding: 50px;
+}
+
+
+.MessageStyle {
+   
+    min-width: 100%;
+}
+
+
+.Chatcolumn {
+    float: right;
+    margin-right: 5%;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    max-width: 30%;
+    min-width: 20%;
+    max-height: 20%;
+    overflow: scroll;
+}
+
+.MessageBox {
+    max-width: 90%;
+    min-width: 70%;
+}
+
+.ChatBoxHeader {
+    position: relative;
+    padding: 2px 5px;
+    min-width: 100%;
+    background-color: black;
+}
+
+
+
+.Star {
+    background-image: url(WebImages/Star.gif);
+    height: 17px;
+    width: 17px;
+    
+}
+
+.WaitingStar {
+    background-image: url(WebImages/WaitingStar.gif);
+    height: 17px;
+    width: 17px;
+}
+
+.FilledStar {
+    background-image: url(WebImages/FilledStar.gif);
+    height: 17px;
+    width: 17px;
+}
+
+
+/*CHAT WITH SELLER*/
+
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.SendMsgBtn {
+    border:none;
+    background:none;
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+}
+
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    float: right;
+    margin-right: 5%;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+        -webkit-animation-name: hvr-buzz;
+        animation-name: hvr-buzz;
+        -webkit-animation-duration: 0.15s;
+        animation-duration: 0.15s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+
+/*END*/
+
+
+
+/*ADD TO CART*/
+
+@-webkit-keyframes hvr-buzz2 {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz2 {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.hvr-buzz2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    float: right;
+    margin-right: 15%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+    .hvr-buzz2:hover, .hvr-buzz2:focus, .hvr-buzz2:active {
+        -webkit-animation-name: hvr-buzz;
+        animation-name: hvr-buzz;
+        -webkit-animation-duration: 0.15s;
+        animation-duration: 0.15s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+
+/*END*/
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.PDescription {
+    color: white;
+    float: right;
+    font-size: 30px;
+    top: 50%;
+    position: center;
+}
+
+
+
+@media screen and (max-width:921px) {
+    .ChatSellerPdtBtn {
+        margin-left: 50%;
+    }
+
+    .AddCartPdtBtn {
+        margin-left: 50%;
+    }
+
+    .Chatcolumn {
+        max-width: 300px;
+        min-width: 200px;
+        max-height: 200px;
+    }
+
+    .MessageBox {
+        max-width: 300px;
+        min-width: 200px;
+    }
+
+    .hvr-buzz {
+        margin-right: 5%;
+        max-width: 80px;
+    }
+
+    .hvr-buzz2 {
+        margin-right: 20%;
+        max-width: 80px;
+    }
+}
+
+
+
+
+
+   

@@ -1,0 +1,75 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.OrderHeader {
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: 10%;
+    margin-left: 50px;
+    font-size: 50px;
+    color: #fff;
+    cursor: default;
+}
+
+.container .box {
+    font-family: "Century Gothic";
+    text-align: center;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+    .container .box .box-row {
+        display: table-row;
+    }
+
+    .container .box .box-cell {
+        display: inline-block;
+        width: 33%;
+        padding: 50px;
+    }
+
+        .container .box .box-cell.box1 {
+            color: black;
+            text-align: justify;
+        }
+
+        .container .box .box-cell.box2 {
+            font-weight: bold;
+            text-align: justify;
+        }
+
+        .container .box .box-cell.box3 {
+            color: red;
+            font-weight: bold;
+            text-align: justify;
+        }
+
+        .container .box .box-cell.StatusDropDown {
+           font-size: 18px;
+           padding: 0;
+        }
+
+
+    @media screen and (max-width:921px) {
+        .container .box {
+        max-width: 350px;
+        margin-left: 20%;
+    }
+
+        .container .box .box-cell {
+            padding: 20px;
+        }
+}
+
+@media screen and (max-width:730px) {
+    .container .box {
+        max-width: 300px;
+        margin-left: 10%;
+    }
+
+        .container .box .box-cell {
+            padding: 10px;
+        }
+}
