@@ -34,3 +34,7 @@ E-Commerce store built using ASP.net &amp; SQL
 ## DEPENDENCIES
 
 [AJAX TOOLKIT](https://www.devexpress.com/products/ajax-control-toolkit)
+
+## CONTRIBUTORS
+
+[JUNAID AFZAL](https://github.com/MuhammadJunaidAfzal)
