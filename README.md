@@ -38,3 +38,5 @@ E-Commerce store built using ASP.net &amp; SQL
 ## CONTRIBUTORS
 
 [JUNAID AFZAL](https://github.com/MuhammadJunaidAfzal)
+
+[UMAR FAROOQ](https://github.com/Um827)
